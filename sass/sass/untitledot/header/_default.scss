@@ -1,0 +1,34 @@
+// Site meta removed
+.site-title, .site-description {
+  display: none;
+}
+// Header default design
+.site-header {
+  background-color: $color__background-header;
+  -webkit-box-shadow: 0px 3px 64px -17px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 3px 64px -17px rgba(0,0,0,0.75);
+  box-shadow: 0px 3px 64px -17px rgba(0,0,0,0.75);
+}
+// Logo default mobile centered
+.site-branding {
+  text-align: center;
+}
+// Logo default size
+.custom-logo-link {
+  width: 100%;
+}
+// Logo default img attr
+.custom-logo-link .custom-logo {
+  object-fit: contain;
+  font-family: 'object-fit: contain;';
+}
+@include media-breakpoint-up($breakpoint__mobile-nav) {
+  // Header enclose child contents
+  .site-header .container {
+    position: relative;
+  }
+  // Header widget margin padding reset
+  .site-header .header-widget .widget {
+    margin: 0;
+  }
+}

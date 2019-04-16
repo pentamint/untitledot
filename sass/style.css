@@ -10582,7 +10582,7 @@ body {
   -ms-overflow-style: none; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Team\%20Drives\/Pentamint\%20Shared\%20Drive\/\!\%20\!\%20Clients\/\!\%20\!\%20\!\%20\!\%20Git\/untitledot\/sass\/sass\/untitledot\/modules\/_cross-browser\.scss}line{font-family:\000036}}
-img {
+img:not(.custom-logo) {
   object-fit: cover;
   font-family: 'object-fit: cover;'; }
 
@@ -10774,12 +10774,15 @@ dd {
 
 @media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Team\%20Drives\/Pentamint\%20Shared\%20Drive\/\!\%20\!\%20Clients\/\!\%20\!\%20\!\%20\!\%20Git\/untitledot\/sass\/sass\/untitledot\/elements\/_elements\.scss}line{font-family:\0000324}}
 img {
-  height: auto;
-  /* Make sure images are scaled correctly. */
   max-width: 100%;
   /* Adhere to container width. */ }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Team\%20Drives\/Pentamint\%20Shared\%20Drive\/\!\%20\!\%20Clients\/\!\%20\!\%20\!\%20\!\%20Git\/untitledot\/sass\/sass\/untitledot\/elements\/_elements\.scss}line{font-family:\0000329}}
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Team\%20Drives\/Pentamint\%20Shared\%20Drive\/\!\%20\!\%20Clients\/\!\%20\!\%20\!\%20\!\%20Git\/untitledot\/sass\/sass\/untitledot\/elements\/_elements\.scss}line{font-family:\0000327}}
+img:not(.custom-logo) {
+  height: auto;
+  /* Make sure images are scaled correctly. */ }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Team\%20Drives\/Pentamint\%20Shared\%20Drive\/\!\%20\!\%20Clients\/\!\%20\!\%20\!\%20\!\%20Git\/untitledot\/sass\/sass\/untitledot\/elements\/_elements\.scss}line{font-family:\0000331}}
 figure {
   margin: 1em 0;
   /* Extra wide images within figure tags don't overflow the content area. */ }
@@ -11790,7 +11793,10 @@ a {
     background-color: #f2f2f2;
     height: 1.75rem;
     border-top: 5px solid #0d1d74;
-    transition: all .2s linear; }
+    -moz-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Team\%20Drives\/Pentamint\%20Shared\%20Drive\/\!\%20\!\%20Clients\/\!\%20\!\%20\!\%20\!\%20Git\/untitledot\/sass\/sass\/untitledot\/header\/_top-header\.scss}line{font-family:\0000311}}
   #top-header .widget-area p {
@@ -11799,7 +11805,10 @@ a {
     margin-bottom: 0;
     margin-top: .2rem;
     opacity: 1;
-    transition: all .2s linear; }
+    -moz-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Team\%20Drives\/Pentamint\%20Shared\%20Drive\/\!\%20\!\%20Clients\/\!\%20\!\%20\!\%20\!\%20Git\/untitledot\/sass\/sass\/untitledot\/header\/_top-header\.scss}line{font-family:\0000320}}
   #top-header .navbar {
@@ -11807,7 +11816,10 @@ a {
     max-width: 33%;
     margin-top: 0;
     opacity: 1;
-    transition: all .2s linear; }
+    -moz-transition: all 0.1s linear;
+    -o-transition: all 0.1s linear;
+    -webkit-transition: all 0.1s linear;
+    transition: all 0.1s linear; }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/G\:\/Team\%20Drives\/Pentamint\%20Shared\%20Drive\/\!\%20\!\%20Clients\/\!\%20\!\%20\!\%20\!\%20Git\/untitledot\/sass\/sass\/untitledot\/header\/_top-header\.scss}line{font-family:\0000328}}
   #top-header .navbar .navbar-nav {

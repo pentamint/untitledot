@@ -1,0 +1,61 @@
+@import "default";
+
+/*--------------------------------------------------------------
+## Header background: block / transparent
+--------------------------------------------------------------*/
+// @import "transparent";
+
+/*--------------------------------------------------------------
+## Logo position: logo-center / logo-right
+--------------------------------------------------------------*/
+@import "logo-left";
+// @import "logo-center";
+// @import "logo-right";
+
+/*--------------------------------------------------------------
+## Header on scroll: block / fixed
+--------------------------------------------------------------*/
+@import "fixed";
+
+/*--------------------------------------------------------------
+## Top header
+--------------------------------------------------------------*/
+@import "top-header";
+
+/* ----- Theme ----- */
+
+// Option - on scroll fixed header height
+.header-sticky-height {
+  // height: 61.42px;
+}
+// Mobile logo size: responsive % / fixed unit
+.custom-logo-link {
+  max-width: 16rem;
+}
+// Mobile fixed header logo size
+.site-header.sticky .custom-logo-link {
+  max-width: 16rem;
+}
+// Mobile logo layout
+.site-branding {
+  padding: 1.5625rem 0; // logo spacing top & bottom
+}
+
+@include media-breakpoint-up($breakpoint__mobile-nav) {
+  // PC logo size
+  .custom-logo-link {
+    max-width: 14rem;
+  }
+  // PC logo fix height jump issue on scroll
+  .custom-logo-link .custom-logo {
+    // height: 1rem;
+  }
+  // PC fixed header logo size
+  .site-header.sticky .custom-logo-link {
+    max-width: 14rem;
+  }
+  // Main header navbar positioning
+  #main-header .navbar {
+    padding: 1.1rem 0 0; // top spacing
+  }
+}

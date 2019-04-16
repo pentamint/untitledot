@@ -1,0 +1,21 @@
+@include media-breakpoint-up($breakpoint__mobile-nav) {
+  // Logo align left
+  .site-branding {
+    text-align: left;
+  }
+  // Logo and navbar-nav separate
+  #main-header .navbar {
+    margin-left: 17rem;
+    max-width: calc( 100% - 17rem );
+  }
+  // Primary nav align right
+  #main-header .navbar .navbar-nav {
+    justify-content: $justify-content__main-nav;
+  }
+  .site-header.sticky .navbar-collapse {
+    padding-top: 0;
+  }
+  .site-header.sticky .navbar-collapse ul {
+    border-top: none;
+  }
+}

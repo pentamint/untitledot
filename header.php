@@ -33,13 +33,13 @@
 						<?php dynamic_sidebar ( 'top-header-widget-1' ); ?>
 					</div><!-- #header-widget-1 -->
 				<?php endif; ?>
-				<nav class="navbar navbar-default" role="navigation">
+				<nav class="navbar navbar-default navbar-tertiary" role="navigation">
 					<div class="nav-wrapper">
-						<div class="collapse navbar-collapse menu-secondary" id="top-navbar-collapse-1">
+						<div class="collapse navbar-collapse menu-tertiary" id="top-navbar-collapse-1">
 							<?php
 								wp_nav_menu( array(
 									'menu'           	=> '',
-									'theme_location'    => 'secondary',
+									'theme_location'    => 'tertiary',
 									'depth'             => 2,
 									'container'         => '',
 									'container_class'   => 'collapse navbar-collapse',
@@ -76,7 +76,7 @@
 				</div><!-- .site-branding -->
 
 				<!-- #site-navigation -->
-				<nav class="navbar navbar-default" role="navigation">
+				<nav class="navbar navbar-default navbar-primary" role="navigation">
 					<div class="nav-wrapper">
 						<!-- Brand and toggle get grouped for better mobile display -->
 						<button type="button" class="navbar-toggle hamburger hamburger--minus" data-toggle="collapse" data-target="#navbar-collapse-1">
@@ -101,6 +101,25 @@
 							?>
 							<div class="menu-overlay"></div>
 						</div><!-- navbar-colapse -->
+					</div><!-- .nav-wrapper -->
+				</nav><!-- .navbar -->
+				<nav class="navbar navbar-default navbar-secondary" role="navigation">
+					<div class="nav-wrapper">
+						<div class="collapse navbar-collapse menu-secondary" id="top-navbar-collapse-1">
+							<?php
+								wp_nav_menu( array(
+									'menu'           	=> '',
+									'theme_location'    => 'secondary',
+									'depth'             => 2,
+									'container'         => '',
+									'container_class'   => 'collapse navbar-collapse',
+									'container_id'      => 'navbar-collapse-2',
+									'menu_class'        => 'nav navbar-nav',
+									'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+									'walker'            => new wp_bootstrap_navwalker())
+								);
+							?>
+						</div><!-- .navbar-colapse -->
 					</div><!-- .nav-wrapper -->
 				</nav><!-- .navbar -->
 			</div><!-- .container -->

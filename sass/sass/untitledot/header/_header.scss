@@ -20,10 +20,14 @@
 /*--------------------------------------------------------------
 ## Top header
 --------------------------------------------------------------*/
-@import "top-header";
+// @import "top-header";
 
 /* ----- Theme ----- */
 
+// Remove top header
+#top-header {
+  display: none;
+}
 // Option - on scroll fixed header height
 .header-sticky-height {
   // height: 61.42px;
@@ -38,24 +42,20 @@
 }
 // Mobile logo layout
 .site-branding {
-  padding: 1.5625rem 0; // logo spacing top & bottom
+  padding: 20px 0; // logo spacing top & bottom
 }
 
 @include media-breakpoint-up($breakpoint__mobile-nav) {
   // PC logo size
   .custom-logo-link {
-    max-width: 14rem;
-  }
-  // PC logo fix height jump issue on scroll
-  .custom-logo-link .custom-logo {
-    // height: 1rem;
+    max-width: 100px;
   }
   // PC fixed header logo size
   .site-header.sticky .custom-logo-link {
-    max-width: 14rem;
+    max-width: 100px;
   }
   // Main header navbar positioning
   #main-header .navbar {
-    padding: 1.1rem 0 0; // top spacing
+    padding: 14px 0 0; // top spacing
   }
 }

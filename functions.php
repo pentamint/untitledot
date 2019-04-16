@@ -114,9 +114,9 @@ function untitledot_widgets_init() {
 		'after_title'   => '</h2>',
 	) );
 	register_sidebar( array(
-		'name'          => 'Top Header Widget', 'PBBiz',
+		'name'          => 'Top Header Widget', 'Untitledot',
 		'id'            => 'top-header-widget-1',
-		'description'   => 'Add widgets here.', 'PBBiz',
+		'description'   => 'Add widgets here.', 'Untitledot',
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
 		'before_title'  => '<h2 class="widget-title">',
@@ -229,6 +229,10 @@ function custom_add_google_fonts() {
 
 // Register Secondary Nav Menu
 register_nav_menus( array(
-	'secondary' => esc_html__( 'Secondary Menu', 'PBBiz' ),
+	'secondary' => esc_html__( 'Secondary Menu', 'Untitledot' ),
 ) );
 
+// Register Tertiary Nav Menu
+register_nav_menus( array(
+	'tertiary' => esc_html__( 'Tertiary Menu', 'Untitledot' ),
+) );

@@ -57,7 +57,6 @@
   .menu-secondary > ul > li > .nav-link {
     padding: .28rem .75rem;
     @include font-size(0.621);
-    font-weight: 900;
   }
   // PC main header navbar expanded menu text color
   .menu-primary > ul > li > a[aria-expanded=true] {
@@ -89,7 +88,6 @@
         >a { // nav link color
           @include font-size(0.8);
           color: $color__text-nav;
-          font-weight: 900;
           transition: transform .5s;
           &:hover {
             color: $color__text-nav-hover;
@@ -105,7 +103,6 @@
               &:hover {
                 background-color: $color__background-nav-dropdown-hover;
                 color: $color__text-nav-dropdown-hover;
-                font-weight: 900;
               }
               &:active {
                 background-color: $color__background-nav-dropdown-active;

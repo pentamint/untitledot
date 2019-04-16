@@ -5,7 +5,6 @@
         // border-bottom: 2px solid #034a99;
         height: 1.75rem;
         border-top: 5px solid #0d1d74;
-        @include transition(all .1s linear);
     }
     // Top header widget remove spacing
     #top-header .widget-area p {
@@ -13,16 +12,11 @@
         font-weight: 900;
         margin-bottom: 0;
         margin-top: .2rem;
-        opacity: 1;
-        @include transition(all .1s linear);
     }
     // Top header navbar-nav width property
     #top-header .navbar {
         margin-left: 67%;
         max-width: 33%;
-        margin-top: 0;
-        opacity: 1;
-        @include transition(all .1s linear);
     }
     // Top header navbar-nav menu align right
     #top-header .navbar .navbar-nav {
@@ -43,13 +37,8 @@
     body.logged-in #top-header .navbar .navbar-nav li:not(:first-child):before {
         right: 3.72rem;
     }
-    // On scroll top bar collapse
+    // Top header hide on scroll fixed header
     .site-header.sticky #top-header {
-        height: 0;
+        display: none;
     }
-    .site-header.sticky #top-header .widget-area p, .site-header.sticky #top-header .navbar {
-        margin-top: -1.5rem;
-        opacity: 0;
-    }
-
 }

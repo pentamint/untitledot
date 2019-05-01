@@ -28,28 +28,29 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # Woocommerce
 # Untitledot (custom)
   ## Utilities
+  ## Transitions
 # Typography
-# Elements (moded)
+# Elements (customized)
 # Forms
-# Theme (custom)
-# Navigation (custom)
+# Theme (customized)
+# Navigation (customized)
 	## Links
 	## Menus
 # Accessibility
 # Alignments
 # Clearings
 # Widgets
-# Content (custom)
+# Content (customized)
 	## Posts and pages
 	## Comments
-# Footer (custom)
-# Header (custom)
+# Footer (customized)
+# Header (customized)
 # Infinite scroll
 # Media
 	## Captions
 	## Galleries
-# Applications
-# Modules (custom)
+# Applications (customized)
+# Modules (customized)
 --------------------------------------------------------------*/
 @import "untitledot/variables-site/variables-site";
 @import "untitledot/mixins/mixins-master";
@@ -74,6 +75,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 @import "untitledot/base";
 @import "untitledot/utility";
+@import "untitledot/transitions/transitions";
 @import "untitledot/modules/cross-browser";
 @import "untitledot/modules/gutenberg";
 

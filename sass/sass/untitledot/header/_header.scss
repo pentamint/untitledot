@@ -24,38 +24,34 @@
 
 /* ----- Theme ----- */
 
-// Remove top header
-#top-header {
-  display: none;
-}
+// ----- Mobile ----- //
+
 // Option - on scroll fixed header height
 .header-sticky-height {
   // height: 61.42px;
 }
-// Mobile logo size: responsive % / fixed unit
-.custom-logo-link {
-  max-width: 16rem;
+// Top header removed
+#top-header {
+  display: none;
 }
-// Mobile fixed header logo size
-.site-header.sticky .custom-logo-link {
-  max-width: 16rem;
+// Header height
+#main-header .container {
+  height: 70px;
 }
-// Mobile logo layout
+// Header element flex width
+// Logo column
 .site-branding {
-  padding: 20px 0; // logo spacing top & bottom
+  flex: 0 0 10%;
+}
+// Nav primary column
+.navbar-primary {
+  flex: 1 0 70%;
+}
+// Nav secondary column
+.navbar-secondary {
+  flex: 0 0 20%;
 }
 
 @include media-breakpoint-up($breakpoint__mobile-nav) {
-  // PC logo size
-  .custom-logo-link {
-    max-width: 100px;
-  }
-  // PC fixed header logo size
-  .site-header.sticky .custom-logo-link {
-    max-width: 100px;
-  }
-  // Main header navbar positioning
-  #main-header .navbar {
-    padding: 14px 0 0; // top spacing
-  }
+
 }

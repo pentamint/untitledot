@@ -1,5 +1,5 @@
 $hamburger-padding-x           : 1rem !default;
-$hamburger-padding-y           : 1.75rem !default;
+$hamburger-padding-y           : 30px !default;
 $hamburger-layer-width         : 1.5rem !default;
 $hamburger-layer-height        : 2px !default;
 $hamburger-layer-spacing       : 5px !default;
@@ -17,7 +17,7 @@ $hamburger-hover-filter       : opacity(50%) !default;
 $hamburger-active-hover-filter: $hamburger-hover-filter !default;
 
 // Types (Remove or comment out what you don’t need)
-$hamburger-types: ( minus );
+$hamburger-types: ( spring );
   // 3dx,
   // 3dx-r,
   // 3dy,

@@ -22,21 +22,21 @@
 
 /* ----- Theme Codes ----- */
 
-// Mobile hamburger menu position
+// Mobile sticky hamburger menu position
 .site-header.sticky .hamburger {
-  padding: 1.75rem 1rem;
+  padding: 30px 1rem;
 }
 @media screen and (min-width: 783px) {
   .site-header.sticky .hamburger {
-    padding: 1.75rem 1rem;
+    padding: 30px 1rem;
   }
 }
 // Mobile menu list top spacing
 .navbar-collapse {
   padding-top: 7.7rem;
 }
-// Mobile menu list max width
-.navbar-collapse.show {
+// Mobile menu list max width #RF01
+.navbar-collapse.show, .navbar-collapse {
   max-width: 450px;
 }
 // Mobile menu item spacing
@@ -48,15 +48,17 @@
   // Mobile menu list remove top spacing
   .navbar-collapse {
     padding-top: 0;
+    max-width: inherit; // reset mobile menu width #RF01
   }
   // PC main header navbar design
   .menu-primary > ul > li > .nav-link {
-    padding: 0.5rem 2rem;
+    padding: 0.5rem 1.25rem;
   }
   // PC top header navbar design
   .menu-secondary > ul > li > .nav-link {
     padding: .28rem .75rem;
     @include font-size(0.621);
+    font-weight: 900;
   }
   // PC main header navbar expanded menu text color
   .menu-primary > ul > li > a[aria-expanded=true] {
@@ -88,10 +90,9 @@
         >a { // nav link color
           @include font-size(0.8);
           color: $color__text-nav;
-          transition: transform .5s;
+          font-weight: 900;
           &:hover {
             color: $color__text-nav-hover;
-            transform: scale(1.1);
           }
         }
         >ul.dropdown-menu.show {
@@ -103,6 +104,7 @@
               &:hover {
                 background-color: $color__background-nav-dropdown-hover;
                 color: $color__text-nav-dropdown-hover;
+                font-weight: 900;
               }
               &:active {
                 background-color: $color__background-nav-dropdown-active;
@@ -112,13 +114,14 @@
             }
           }
         }
+        // Current active menu item design
+        &.current-menu-item, &.show {
+          a {
+            color: $color__text-nav-hover;
+          }
+        }
       }
     }
-  }
-  // current active menu item design
-  .menu-primary.navbar-collapse > ul > .current-menu-item > a, .menu-primary.navbar-collapse > ul > li.show > a {
-    color: $color__text-nav-hover;
-    transform: scale(1.1);
   }
 }
 
@@ -144,19 +147,5 @@
   }
   .site-header.sticky .navbar-nav {
     float: right;
-  }
-}
-
-/* ----- Transitions ----- */
-
-// Header transitions
-.site-header, .site-header .site-branding, .site-header .navbar-collapse, .site-header .navbar-collapse ul li:nth-child(3), .site-header .navbar-collapse ul li:nth-child(4) {
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
-}
-@include media-breakpoint-down(md) {
-  .site-header, .site-header .site-branding, .site-header .navbar-collapse, .site-header .navbar-collapse ul li:nth-child(3), .site-header .navbar-collapse ul li:nth-child(4) {
-    -webkit-transition: 0.1s ease-in-out;
-    transition: 0.1s ease-in-out;
   }
 }
